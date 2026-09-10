@@ -1,0 +1,13 @@
+---
+- name: Démo ansible-pull
+  hosts: localhost
+  gather_facts: true
+  become: true
+
+  tasks:
+    - name: Ajout de la date dans le fichier pull.log
+      ansible.builtin.lineinfile:
+        dest: /home/stagiaire/pull.log
+        line: "{{ ansible_facts.date_time.iso8601 }}"
+        create: true
+        mode: "0644"
