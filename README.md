@@ -2,9 +2,18 @@
 
 ### Préparation du client
 
-```
-pipx install ansible-core
-```
+* **Prérequis logiciels**
+  * `git`
+
+* **Installation minimale de ansible**
+
+  ```
+  pipx install ansible-core
+  ```
+
+  **Remarque**
+
+    Selon les modules des playbooks, il peut être nécessaire d'effectuer des installations supplémentaires.
 
 ### Exécution de `ansible-pull`
 
