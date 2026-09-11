@@ -4,6 +4,7 @@
 
 * **Prérequis logiciels**
   * `git`
+  * `pipx`
 
 * **Installation minimale de ansible**
 
